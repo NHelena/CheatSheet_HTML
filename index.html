@@ -48,21 +48,69 @@
       <!-- Heading of the section -->
       <h1 class="text-center">HTML cheat-sheet</h1>
       <hr>
-      <p class="lead text-center">You'll find below a list of the HTML most-commonly used tags and their respective description.<br>
+      <p class="lead text-center">You'll find below a list of the HTML most-commonly used tags and their respective short description.<br>
       Feel free to share your thoughts by hitting the "Contact" button up above.</p>
       <!-- Beginning of the tabs wrapper -->
       <div class="large-12 columns">
         <!-- Beginning of the tabs list -->
         <ul class="tabs" data-tabs id="content-tabs">
-          <li class="tabs-title is-active"><a href="#link" aria-selected="true">Link</a></li>
+          <li class="tabs-title is-active"><a href="#structure" aria-selected="true">Structure</a></li>
+          <li class="tabs-title"><a href="#link">Link</a></li>
           <li class="tabs-title"><a href="#list">List</a></li>
-          <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
-          <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+          <li class="tabs-title"><a href="#table">Table</a></li>
+          <li class="tabs-title"><a href="#text">Text</a></li>
+          <li class="tabs-title"><a href="#misc">Miscellaneous</a></li>
         </ul>
         <!-- End of the tabs list -->
-        <!-- Beginning of the first tab containing the link tags-->
+        <!-- Beginning of the tab content -->
         <div class="tabs-content" data-tabs-content="content-tabs">
-          <div class="tabs-panel is-active" id="link">
+          <!-- Beginning of the first tab contaning the structure tags -->
+          <article class="tabs-panel is-active" id="structure">
+            <table class="hover">
+              <thead>
+                <tr>
+                  <th colspan="2">Structure tags</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&lt;!doctype html&gt;</code></td>
+                  <td>Set the page type to HTML</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;html&gt;[...]&lt;/html&gt;</code></td>
+                  <td>Contains all the HTML content</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;head&gt;[...]&lt;/head&gt;</code></td>
+                  <td>Contains all the navigator meta-data</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;title&gt;[...]&lt;/title&gt;</code></td>
+                  <td>Set a specific title to the web page</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;h[1-6]&gt;[...]&lt;/h[1-6]&gt;</code></td>
+                  <td>Heading (h1 being the largest &amp; h6 the smallest)</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;body&gt;[...]&lt;/body&gt;</code></td>
+                  <td>Contains all the content of the page</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;header&gt;[...]&lt;/header&gt;</code></td>
+                  <td>Contains the body header</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;footer&gt;[...]&lt;/footer&gt;</code></td>
+                  <td>Contains the body footer</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <!-- End of the first tab contaning the structure tags -->
+          <!-- Beginning of the second tab containing the link tags-->
+          <article class="tabs-panel" id="link">
             <table class="hover">
               <thead>
                 <tr>
@@ -96,10 +144,10 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-          <!-- End of the first tab containing the link tags -->
-          <!-- Beginning of the second tab containing the list tags -->
-          <div class="tabs-panel" id="list">
+          </article>
+          <!-- End of the second tab containing the link tags -->
+          <!-- Beginning of the third tab containing the list tags -->
+          <article class="tabs-panel" id="list">
             <table class="hover">
               <thead>
                 <tr>
@@ -133,17 +181,42 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-          <!-- End of the second tab containing the list tags -->
-          <div class="tabs-panel" id="panel3">
-          </div>
-          <div class="tabs-panel" id="panel4">
-          </div>
+          </article>
+          <!-- End of the third tab containing the list tags -->
+          <!-- Beginning of the fourth tab containing the table tags -->
+          <article class="tabs-panel" id="table">
+          </article>
+          <!-- End of the fourth tab containing the table tags -->
+          <!-- Beginning of the fifth tab contaning the text tags -->
+          <article class="tabs-panel" id="text">
+          </article>
+          <!-- End of the fifth tab contaning the text tags -->
+          <!-- Beginning of the sixth tab contaning miscellaneous tags -->
+          <article class="tabs-panel" id="misc">
+            <table class="hover">
+              <thead>
+                <tr>
+                  <th colspan="2">Miscellaneous tags</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&lt;br&gt;</code></td>
+                  <td>Line break</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;hr&gt;</code></td>
+                  <td>Horizontal line</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <!-- End of the sixth tab contaning miscellaneous tags -->
         </div>
+        <!-- End of the tabs content -->
       </div>
       <!-- End of the tabs wrapper -->
     </section>
-
     <!-- End of the section containing the different tabs -->
     <!-- Beginning of the Foundation 6 JavaScript scripts -->
     <script src="js/vendor/jquery.js"></script>
