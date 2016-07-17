@@ -8,14 +8,14 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="HTML cheat-sheet">
     <meta name="author" content="Hélèna Nguyen">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="img/favicon.ico">
     <meta name="keywords" content="cheatsheet, HTML, tag, tags">
     <meta name="description" content="HTML most-commonly used tags CheatSheet">
     <title>HTML tags CheatSheet</title>
     <!-- Foundation core CSS -->
     <link rel="stylesheet" href="css/foundation.css" />
     <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <!-- End of the page head containing all the meta-data -->
   <!-- Beginning of the page body -->
@@ -26,6 +26,7 @@
         <div class="top-bar-left">
           <ul class="menu">
             <li><a href="#"><i class="fi-html5"></i><span>HTML Cheat-Sheet</span></a></li>
+            <li><a href="#"><i class="fi-html5"></i><span>Emmet Cheat-Sheet</span></a></li>
             <li><a href="https://nhelena.github.io/CheatSheet_CSS/"><i class="fi-css3"></i><span>CSS Cheat-Sheet</span></a></li>
             <li><a href="https://github.com/NHelena"><i class="fi-social-github"></i><span>My GitHub</span></a></li>
             <li><a href="mailto:nguyen.helena.tmh@gmail.com"><i class="fi-mail"></i><span>Contact</span></a></li>
@@ -42,19 +43,23 @@
     <!-- End of the sticky navigation top-bar -->
     <!-- Beginning of the section containing the different tabs -->
     <section class="row">
+      <!-- Beginning of the tabs wrapper -->
       <div class="large-12 columns">
+        <!-- Beginning of the tabs list -->
         <ul class="tabs" data-tabs id="content-tabs">
           <li class="tabs-title is-active"><a href="#link" aria-selected="true">Link</a></li>
-          <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+          <li class="tabs-title"><a href="#list">List</a></li>
           <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
           <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
         </ul>
+        <!-- End of the tabs list -->
+        <!-- Beginning of the first tab containing the link tags-->
         <div class="tabs-content" data-tabs-content="content-tabs">
           <div class="tabs-panel is-active" id="link">
             <table class="hover">
               <thead>
                 <tr>
-                  <th colspan="2">Link tags</th>
+                  <th colspan="2">Linking tags</th>
                 </tr>
               </thead>
               <tbody>
@@ -85,35 +90,51 @@
               </tbody>
             </table>
           </div>
-          <div class="tabs-panel" id="panel2">
+          <!-- End of the first tab containing the link tags -->
+          <!-- Beginning of the second tab containing the list tags -->
+          <div class="tabs-panel" id="list">
             <table class="hover">
               <thead>
                 <tr>
-                  <th colspan="2">Link tags</th>
+                  <th colspan="2">List tags</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td></td>
-                  <td></td>
+                  <td>&lt;ol&gt;[...]&lt;/ol&gt;</td>
+                  <td>Ordered list</td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td></td>
+                  <td>&lt;ul&gt;[...]&lt;/ul&gt;</td>
+                  <td>Un-ordered list</td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td></td>
+                  <td>&lt;li&gt;[...]&lt;/li&gt;</td>
+                  <td>List item (within [un-]ordered list)</td>
+                </tr>
+                <tr>
+                  <td>&lt;dl&gt;[...]&lt;/dl&gt;</td>
+                  <td>Definition list</td>
+                </tr>
+                <tr>
+                  <td>&lt;dt&gt;[...]&lt;/dt&gt;</td>
+                  <td>Term or phrase being defined</td>
+                </tr>
+                <tr>
+                  <td>&lt;dd&gt;[...]&lt;/dd&gt;</td>
+                  <td>Detailed definition of a term or a phrase</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <!-- End of the second tab containing the list tags -->
           <div class="tabs-panel" id="panel3">
           </div>
           <div class="tabs-panel" id="panel4">
           </div>
         </div>
       </div>
+      <!-- End of the tabs wrapper -->
     </section>
 
     <!-- End of the section containing the different tabs -->
