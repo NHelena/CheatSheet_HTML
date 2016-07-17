@@ -1,6 +1,9 @@
-@import foundation-icons.css;
-
 /* Space out the table container & the top of the page */
 .row {
   margin-top: 1.5em;
+}
+
+/*Space out the tabs section & the top of the tabs */
+.lead {
+  margin-bottom: 1.5em;
 }
