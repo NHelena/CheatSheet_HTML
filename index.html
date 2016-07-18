@@ -45,6 +45,18 @@
     <!-- End of the sticky navigation top-bar -->
     <!-- Beginning of the section containing the different tabs -->
     <section class="row">
+      <!-- Beginning of the closable alert -->
+      <div class="alert callout text-center" data-closable="slide-out-right">
+        <p>
+          <i class="fi-alert"></i><br>
+          Beware, the search bar doesn't work. It's a trap!<br>
+          As this website is still in construction, all the features aren't enabled yet.
+        </p>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- End of the closable alert -->
       <!-- Heading of the section -->
       <h1 class="text-center">HTML cheat-sheet</h1>
       <hr>
@@ -54,12 +66,12 @@
       <div class="large-12 columns">
         <!-- Beginning of the tabs list -->
         <ul class="tabs" data-tabs id="content-tabs">
-          <li class="tabs-title is-active"><a href="#structure" aria-selected="true">Structure</a></li>
-          <li class="tabs-title"><a href="#link">Link</a></li>
-          <li class="tabs-title"><a href="#list">List</a></li>
-          <li class="tabs-title"><a href="#table">Table</a></li>
-          <li class="tabs-title"><a href="#text">Text</a></li>
-          <li class="tabs-title"><a href="#misc">Miscellaneous</a></li>
+          <li class="tabs-title is-active"><a href="#structure" aria-selected="true"><i class="fi-page-edit"></i> Structure</a></li>
+          <li class="tabs-title"><a href="#link"><i class="fi-link"></i> Link</a></li>
+          <li class="tabs-title"><a href="#list"><i class="fi-list-thumbnails"></i> List</a></li>
+          <li class="tabs-title"><a href="#table"><i class="fi-thumbnails"></i> Table</a></li>
+          <li class="tabs-title"><a href="#text"><i class="fi-text-color"></i> Text</a></li>
+          <li class="tabs-title"><a href="#misc"><i class="fi-asterisk"></i> Miscellaneous</a></li>
         </ul>
         <!-- End of the tabs list -->
         <!-- Beginning of the tab content -->
@@ -100,6 +112,10 @@
                 <tr>
                   <td><code>&lt;header&gt;[...]&lt;/header&gt;</code></td>
                   <td>Contains the body header</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;nav&gt;[...]&lt;/nav&gt;</code></td>
+                  <td>Contains the navigation content (e.g. a menu)</td>
                 </tr>
                 <tr>
                   <td><code>&lt;footer&gt;[...]&lt;/footer&gt;</code></td>
@@ -185,10 +201,80 @@
           <!-- End of the third tab containing the list tags -->
           <!-- Beginning of the fourth tab containing the table tags -->
           <article class="tabs-panel" id="table">
+            <table class="hover">
+              <thead>
+                <tr>
+                  <th colspan="2">Table tags</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&lt;table&gt;[...]&lt;/table&gt;</code></td>
+                  <td>Display a table</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;caption&gt;[...]&lt;/caption&gt;</code></td>
+                  <td>Set the title of the table</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;thead&gt;[...]&lt;/thead&gt;</code></td>
+                  <td>Header of the table</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;tbody&gt;[...]&lt;/tbody&gt;</code></td>
+                  <td>Body of the table</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;tfoot&gt;[...]&lt;/tfoot&gt;</code></td>
+                  <td>Footer of a table</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;tr&gt;[...]&lt;/tr&gt;</code></td>
+                  <td>Create a new row in the tabke</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;th&gt;[...]&lt;/th&gt;</code></td>
+                  <td>Create a new column (within the table header or footer)</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;td&gt;[...]&lt;/td&gt;</code></td>
+                  <td>Create a new column (within the table body)</td>
+                </tr>
+              </tbody>
+            </table>
           </article>
           <!-- End of the fourth tab containing the table tags -->
           <!-- Beginning of the fifth tab contaning the text tags -->
           <article class="tabs-panel" id="text">
+            <table class="hover">
+              <thead>
+                <tr>
+                  <th colspan="2">Text tags</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>&lt;b&gt;[...]&lt;/b&gt;</code></td>
+                  <td>Set a character string to bold</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;i&gt;[...]&lt;/i&gt;</code></td>
+                  <td>Set a character string to italic</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;u&gt;[...]&lt;/u&gt;</code></td>
+                  <td>Underline a character string</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;strike&gt;[...]&lt;/strike&gt;</code></td>
+                  <td>Strike a character string</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;code&gt;[...]&lt;/code&gt;</code></td>
+                  <td>Display a character string with a coding style</td>
+                </tr>
+              </tbody>
+            </table>
           </article>
           <!-- End of the fifth tab contaning the text tags -->
           <!-- Beginning of the sixth tab contaning miscellaneous tags -->
@@ -200,6 +286,10 @@
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <td><code>!-- [...] --!</code></td>
+                  <td>Insert a HTML comment</td>
+                </tr>
                 <tr>
                   <td><code>&lt;br&gt;</code></td>
                   <td>Line break</td>
