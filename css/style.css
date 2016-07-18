@@ -1,9 +1,19 @@
+ /*Enlarge the page font size */
+html {
+  font-size: 105%;
+}
+
 /* Space out the table container & the top of the page */
 .row {
   margin-top: 1.5em;
 }
 
-/*Space out the tabs section & the top of the tabs */
+/* Space out the tabs section & the top of the tabs */
 .lead {
   margin-bottom: 1.5em;
+}
+
+/* Enlarge the tabs title font size */
+.tabs-title a {
+  font-size: 1rem;
 }
