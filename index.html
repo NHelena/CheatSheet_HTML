@@ -1,326 +1,305 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <!-- Beginning of the page head containing all the meta-data -->
-  <head>
-    <!-- Setting of the characters encoding -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- Setting of the responsive parameters -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="author" content="Hélèna Nguyen">
-    <!-- Setting of the favicon -->
-    <link rel="icon" href="favicon.ico">
-    <!-- Setting of the page title, keywords & description for web-referencing -->
-    <meta name="keywords" content="cheatsheet, HTML, tag, tags">
-    <meta name="description" content="HTML tags cheat-sheet">
-    <title>HTML tags CheatSheet</title>
-    <!-- Foundation core CSS -->
-    <link rel="stylesheet" href="css/foundation.css" />
-    <!-- Foundation icons CSS -->
-    <link rel="stylesheet" href="css/foundation-icons.css" />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <!-- End of the page head containing all the meta-data -->
-  <!-- Beginning of the page body -->
-  <body>
-    <!-- Beginning of the sticky navigation top-bar -->
-    <header data-sticky-container>
-      <nav class="title-bar">
-        <div class="top-bar-left">
-          <ul class="menu">
-            <li><a href="https://nhelena.github.io/CheatSheet_HTML/"><i class="fi-html5"></i><span>HTML Cheat-Sheet</span></a></li>
-            <li><a href="https://nhelena.github.io/CheatSheet_Emmet/"><i class="fi-background-color"></i><span>Emmet Cheat-Sheet</span></a></li>
-            <li><a href="https://nhelena.github.io/CheatSheet_CSS/"><i class="fi-css3"></i><span>CSS Cheat-Sheet</span></a></li>
-            <li><a href="https://github.com/NHelena"><i class="fi-social-github"></i><span>My GitHub</span></a></li>
-            <li><a href="mailto:nguyen.helena.tmh@gmail.com"><i class="fi-mail"></i><span>Contact</span></a></li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- End of the sticky navigation top-bar -->
-    <!-- Beginning of the section containing the different tabs -->
-    <section class="row">
-      <!-- Beginning of the closable alert -->
-      <aside class="alert callout text-center" data-closable="slide-out-right">
-        <p>
-          <i class="fi-alert"></i><br>
-          Beware, the search bar doesn't work. It's a trap!<br>
-          As this website is still in construction, all the features aren't enabled yet.
-        </p>
-        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </aside>
-      <!-- End of the closable alert -->
-      <!-- Heading of the section -->
-      <h1 class="text-center">HTML cheat-sheet</h1>
-      <hr>
-      <p class="lead text-center">You'll find below a list of the HTML most-commonly used tags and their respective short description.<br>
-      Feel free to share your thoughts by hitting the "Contact" button up above.</p>
-      <!-- Beginning of the tabs wrapper -->
-      <div class="large-12 columns">
-        <!-- Beginning of the tabs list -->
-        <ul class="tabs" data-tabs id="content-tabs">
-          <li class="tabs-title is-active"><a href="#structure" aria-selected="true"><i class="fi-page-edit"></i> Structure</a></li>
-          <li class="tabs-title"><a href="#link"><i class="fi-link"></i> Link</a></li>
-          <li class="tabs-title"><a href="#list"><i class="fi-list-thumbnails"></i> List</a></li>
-          <li class="tabs-title"><a href="#table"><i class="fi-thumbnails"></i> Table</a></li>
-          <li class="tabs-title"><a href="#text"><i class="fi-text-color"></i> Text</a></li>
-          <li class="tabs-title"><a href="#misc"><i class="fi-asterisk"></i> Miscellaneous</a></li>
+
+<!-- Beginning of the page head containing all the meta-data -->
+<head>
+  <!-- Setting of the characters encoding -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Setting of the responsive parameters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="author" content="Hélèna Nguyen">
+  <!-- Setting of the favicon -->
+  <link rel="icon" href="favicon.ico">
+  <!-- Setting of the page title, keywords & description for web-referencing -->
+  <meta name="keywords" content="cheatsheet, HTML, tag, tags">
+  <meta name="description" content="HTML tags cheat-sheet">
+  <title>HTML tags CheatSheet</title>
+  <!-- Foundation core CSS -->
+  <link rel="stylesheet" href="css/foundation.css" />
+  <!-- Foundation icons CSS -->
+  <link rel="stylesheet" href="css/foundation-icons.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<!-- End of the page head containing all the meta-data -->
+
+<!-- Beginning of the page body -->
+<body>
+  <!-- Beginning of the sticky navigation top-bar -->
+  <header data-sticky-container>
+    <nav class="title-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a href="https://nhelena.github.io/CheatSheet_HTML/"><i class="fi-html5"></i><span>HTML Cheat-Sheet</span></a></li>
+          <li><a href="https://nhelena.github.io/CheatSheet_Emmet/"><i class="fi-background-color"></i><span>Emmet Cheat-Sheet</span></a></li>
+          <li><a href="https://nhelena.github.io/CheatSheet_CSS/"><i class="fi-css3"></i><span>CSS Cheat-Sheet</span></a></li>
+          <li><a href="https://github.com/NHelena"><i class="fi-social-github"></i><span>My GitHub</span></a></li>
+          <li><a href="mailto:nguyen.helena.tmh@gmail.com"><i class="fi-mail"></i><span>Contact</span></a></li>
         </ul>
-        <!-- End of the tabs list -->
-        <!-- Beginning of the tab content -->
-        <div class="tabs-content" data-tabs-content="content-tabs">
-          <!-- Beginning of the first tab contaning the structure tags -->
-          <article class="tabs-panel is-active" id="structure">
-            <table class="hover">
-              <thead>
-                <tr>
-                  <th colspan="2">Structure tags</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>&lt;!doctype html&gt;</code></td>
-                  <td>Set the page type to HTML</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;html&gt;[...]&lt;/html&gt;</code></td>
-                  <td>Contains all the HTML content</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;head&gt;[...]&lt;/head&gt;</code></td>
-                  <td>Contains all the navigator meta-data</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;title&gt;[...]&lt;/title&gt;</code></td>
-                  <td>Set a specific title to the web page</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;h[1-6]&gt;[...]&lt;/h[1-6]&gt;</code></td>
-                  <td>Heading (h1 being the largest &amp; h6 the smallest)</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;body&gt;[...]&lt;/body&gt;</code></td>
-                  <td>Contains all the content of the page</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;header&gt;[...]&lt;/header&gt;</code></td>
-                  <td>Contains the body header</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;nav&gt;[...]&lt;/nav&gt;</code></td>
-                  <td>Contains the navigation content (e.g. a menu)</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;footer&gt;[...]&lt;/footer&gt;</code></td>
-                  <td>Contains the body footer</td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-          <!-- End of the first tab contaning the structure tags -->
-          <!-- Beginning of the second tab containing the link tags-->
-          <article class="tabs-panel" id="link">
-            <table class="hover">
-              <thead>
-                <tr>
-                  <th colspan="2">Linking tags</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>&lt;img src="[url]"&gt;</code></td>
-                  <td>Display an image</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;a href="[url]"&gt;</code></td>
-                  <td>Basic link to a website</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;a href="#[id]"&gt;</code></td>
-                  <td>Anchor link</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;a href="[url]#"&gt;</code></td>
-                  <td>Anchor link to another website</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;a href="mailto:[email]"&gt;</code></td>
-                  <td>Send an email to a given address</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;a href="mailto:[email]?Subject=[subject]"&gt;</code></td>
-                  <td>Send an email to a given address with a specific subject</td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-          <!-- End of the second tab containing the link tags -->
-          <!-- Beginning of the third tab containing the list tags -->
-          <article class="tabs-panel" id="list">
-            <table class="hover">
-              <thead>
-                <tr>
-                  <th colspan="2">List tags</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>&lt;ol&gt;[...]&lt;/ol&gt;</code></td>
-                  <td>Ordered list</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;ul&gt;[...]&lt;/ul&gt;</code></td>
-                  <td>Un-ordered list</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;li&gt;[...]&lt;/li&gt;</code></td>
-                  <td>List item (within [un-]ordered list)</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;dl&gt;[...]&lt;/dl&gt;</code></td>
-                  <td>Definition list</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;dt&gt;[...]&lt;/dt&gt;</code></td>
-                  <td>Term or phrase being defined</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;dd&gt;[...]&lt;/dd&gt;</code></td>
-                  <td>Detailed definition of a term or a phrase</td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-          <!-- End of the third tab containing the list tags -->
-          <!-- Beginning of the fourth tab containing the table tags -->
-          <article class="tabs-panel" id="table">
-            <table class="hover">
-              <thead>
-                <tr>
-                  <th colspan="2">Table tags</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>&lt;table&gt;[...]&lt;/table&gt;</code></td>
-                  <td>Display a table</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;caption&gt;[...]&lt;/caption&gt;</code></td>
-                  <td>Set the title of the table</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;thead&gt;[...]&lt;/thead&gt;</code></td>
-                  <td>Header of the table</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;tbody&gt;[...]&lt;/tbody&gt;</code></td>
-                  <td>Body of the table</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;tfoot&gt;[...]&lt;/tfoot&gt;</code></td>
-                  <td>Footer of a table</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;tr&gt;[...]&lt;/tr&gt;</code></td>
-                  <td>Create a new row in the tabke</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;th&gt;[...]&lt;/th&gt;</code></td>
-                  <td>Create a new column (within the table header or footer)</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;td&gt;[...]&lt;/td&gt;</code></td>
-                  <td>Create a new column (within the table body)</td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-          <!-- End of the fourth tab containing the table tags -->
-          <!-- Beginning of the fifth tab contaning the text tags -->
-          <article class="tabs-panel" id="text">
-            <table class="hover">
-              <thead>
-                <tr>
-                  <th colspan="2">Text tags</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>&lt;b&gt;[...]&lt;/b&gt;</code></td>
-                  <td>Set a character string to bold</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;i&gt;[...]&lt;/i&gt;</code></td>
-                  <td>Set a character string to italic</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;u&gt;[...]&lt;/u&gt;</code></td>
-                  <td>Underline a character string</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;strike&gt;[...]&lt;/strike&gt;</code></td>
-                  <td>Strike a character string</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;code&gt;[...]&lt;/code&gt;</code></td>
-                  <td>Display a character string with a coding style</td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-          <!-- End of the fifth tab contaning the text tags -->
-          <!-- Beginning of the sixth tab contaning miscellaneous tags -->
-          <article class="tabs-panel" id="misc">
-            <table class="hover">
-              <thead>
-                <tr>
-                  <th colspan="2">Miscellaneous tags</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>!-- [...] --!</code></td>
-                  <td>Insert a HTML comment</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;br&gt;</code></td>
-                  <td>Line break</td>
-                </tr>
-                <tr>
-                  <td><code>&lt;hr&gt;</code></td>
-                  <td>Horizontal line</td>
-                </tr>
-              </tbody>
-            </table>
-          </article>
-          <!-- End of the sixth tab contaning miscellaneous tags -->
-        </div>
-        <!-- End of the tabs content -->
       </div>
-      <!-- End of the tabs wrapper -->
-    </section>
-    <!-- End of the section containing the different tabs -->
-    <!-- Beginning of the Foundation 6 JavaScript scripts -->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-    <!-- End of the Foundation 6 JavaScript scripts -->
-  </body>
-  <!-- End of the page body -->
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- End of the sticky navigation top-bar -->
+  <!-- Beginning of the section containing the different tabs -->
+  <section class="row">
+    <!-- Beginning of the closable alert -->
+    <aside class="alert callout text-center" data-closable="slide-out-right">
+      <p>
+        <i class="fi-alert"></i><br>
+        Beware, the search bar doesn't work. It's a trap!<br>
+        As this website is still in construction, all the features aren't enabled yet.
+      </p>
+      <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </aside>
+    <!-- End of the closable alert -->
+    <!-- Heading of the section -->
+    <h1 class="text-center">HTML cheat-sheet</h1>
+    <hr>
+    <p class="lead text-center">You'll find below a list of the HTML most-commonly used tags and their respective short description.<br>
+    Feel free to share your thoughts by hitting the "Contact" button up above.</p>
+    <!-- Beginning of the tabs wrapper -->
+    <div class="large-12 columns">
+      <!-- Beginning of the tabs list -->
+      <ul class="tabs" data-tabs id="content-tabs" role="menubar">
+        <li class="tabs-title is-active"><a href="#structure" role="menuitem"><i class="fi-page-edit"></i> Structure</a></li>
+        <li class="tabs-title"><a href="#link" role="menuitem"><i class="fi-link"></i> Link</a></li>
+        <li class="tabs-title"><a href="#list" role="menuitem"><i class="fi-list-thumbnails"></i> List</a></li>
+        <li class="tabs-title"><a href="#table" role="menuitem"><i class="fi-thumbnails"></i> Table</a></li>
+        <li class="tabs-title"><a href="#text" role="menuitem"><i class="fi-text-color"></i> Text</a></li>
+        <li class="tabs-title"><a href="#misc" role="menuitem"><i class="fi-asterisk"></i> Miscellaneous</a></li>
+      </ul>
+      <!-- End of the tabs list -->
+      <!-- Beginning of the tab content -->
+      <div class="tabs-content" data-tabs-content="content-tabs">
+        <!-- Beginning of the first tab contaning the structure tags -->
+        <article class="tabs-panel is-active" id="structure">
+          <h2>Structure tags</h2>
+          <table class="hover">
+            <tbody>
+              <tr>
+                <td><code>&lt;!doctype html&gt;</code></td>
+                <td>Set the page type to HTML</td>
+              </tr>
+              <tr>
+                <td><code>&lt;html&gt;[...]&lt;/html&gt;</code></td>
+                <td>Contains all the HTML content</td>
+              </tr>
+              <tr>
+                <td><code>&lt;head&gt;[...]&lt;/head&gt;</code></td>
+                <td>Contains all the navigator meta-data</td>
+              </tr>
+              <tr>
+                <td><code>&lt;title&gt;[...]&lt;/title&gt;</code></td>
+                <td>Set a specific title to the web page</td>
+              </tr>
+              <tr>
+                <td><code>&lt;h[1-6]&gt;[...]&lt;/h[1-6]&gt;</code></td>
+                <td>Heading (h1 being the largest &amp; h6 the smallest)</td>
+              </tr>
+              <tr>
+                <td><code>&lt;body&gt;[...]&lt;/body&gt;</code></td>
+                <td>Contains all the content of the page</td>
+              </tr>
+              <tr>
+                <td><code>&lt;header&gt;[...]&lt;/header&gt;</code></td>
+                <td>Contains the body header</td>
+              </tr>
+              <tr>
+                <td><code>&lt;nav&gt;[...]&lt;/nav&gt;</code></td>
+                <td>Contains the navigation content (e.g. a menu)</td>
+              </tr>
+              <tr>
+                <td><code>&lt;footer&gt;[...]&lt;/footer&gt;</code></td>
+                <td>Contains the body footer</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- End of the first tab contaning the structure tags -->
+        <!-- Beginning of the second tab containing the link tags-->
+        <article class="tabs-panel" id="link">
+          <h2>Linking tags</h2>
+          <table class="hover">
+            <tbody>
+              <tr>
+                <td><code>&lt;img src="[url]"&gt;</code></td>
+                <td>Display an image</td>
+              </tr>
+              <tr>
+                <td><code>&lt;a href="[url]"&gt;</code></td>
+                <td>Basic link to a website</td>
+              </tr>
+              <tr>
+                <td><code>&lt;a href="#[id]"&gt;</code></td>
+                <td>Anchor link</td>
+              </tr>
+              <tr>
+                <td><code>&lt;a href="[url]#"&gt;</code></td>
+                <td>Anchor link to another website</td>
+              </tr>
+              <tr>
+                <td><code>&lt;a href="mailto:[email]"&gt;</code></td>
+                <td>Send an email to a given address</td>
+              </tr>
+              <tr>
+                <td><code>&lt;a href="mailto:[email]?Subject=[subject]"&gt;</code></td>
+                <td>Send an email to a given address with a specific subject</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- End of the second tab containing the link tags -->
+        <!-- Beginning of the third tab containing the list tags -->
+        <article class="tabs-panel" id="list">
+          <h2>List tags</h2>
+          <table class="hover">
+            <tbody>
+              <tr>
+                <td><code>&lt;ol&gt;[...]&lt;/ol&gt;</code></td>
+                <td>Ordered list</td>
+              </tr>
+              <tr>
+                <td><code>&lt;ul&gt;[...]&lt;/ul&gt;</code></td>
+                <td>Un-ordered list</td>
+              </tr>
+              <tr>
+                <td><code>&lt;li&gt;[...]&lt;/li&gt;</code></td>
+                <td>List item (within [un-]ordered list)</td>
+              </tr>
+              <tr>
+                <td><code>&lt;dl&gt;[...]&lt;/dl&gt;</code></td>
+                <td>Definition list</td>
+              </tr>
+              <tr>
+                <td><code>&lt;dt&gt;[...]&lt;/dt&gt;</code></td>
+                <td>Term or phrase being defined</td>
+              </tr>
+              <tr>
+                <td><code>&lt;dd&gt;[...]&lt;/dd&gt;</code></td>
+                <td>Detailed definition of a term or a phrase</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- End of the third tab containing the list tags -->
+        <!-- Beginning of the fourth tab containing the table tags -->
+        <article class="tabs-panel" id="table">
+          <h2>Table tags</h2>
+          <table class="hover">
+            <tbody>
+              <tr>
+                <td><code>&lt;table&gt;[...]&lt;/table&gt;</code></td>
+                <td>Display a table</td>
+              </tr>
+              <tr>
+                <td><code>&lt;caption&gt;[...]&lt;/caption&gt;</code></td>
+                <td>Set the title of the table</td>
+              </tr>
+              <tr>
+                <td><code>&lt;thead&gt;[...]&lt;/thead&gt;</code></td>
+                <td>Header of the table</td>
+              </tr>
+              <tr>
+                <td><code>&lt;tbody&gt;[...]&lt;/tbody&gt;</code></td>
+                <td>Body of the table</td>
+              </tr>
+              <tr>
+                <td><code>&lt;tfoot&gt;[...]&lt;/tfoot&gt;</code></td>
+                <td>Footer of a table</td>
+              </tr>
+              <tr>
+                <td><code>&lt;tr&gt;[...]&lt;/tr&gt;</code></td>
+                <td>Create a new row in the tabke</td>
+              </tr>
+              <tr>
+                <td><code>&lt;th&gt;[...]&lt;/th&gt;</code></td>
+                <td>Create a new column (within the table header or footer)</td>
+              </tr>
+              <tr>
+                <td><code>&lt;td&gt;[...]&lt;/td&gt;</code></td>
+                <td>Create a new column (within the table body)</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- End of the fourth tab containing the table tags -->
+        <!-- Beginning of the fifth tab contaning the text tags -->
+        <article class="tabs-panel" id="text">
+          <h2>Text tags</h2>
+          <table class="hover">
+            <tbody>
+              <tr>
+                <td><code>&lt;b&gt;[...]&lt;/b&gt;</code></td>
+                <td>Set a character string to bold</td>
+              </tr>
+              <tr>
+                <td><code>&lt;i&gt;[...]&lt;/i&gt;</code></td>
+                <td>Set a character string to italic</td>
+              </tr>
+              <tr>
+                <td><code>&lt;u&gt;[...]&lt;/u&gt;</code></td>
+                <td>Underline a character string</td>
+              </tr>
+              <tr>
+                <td><code>&lt;strike&gt;[...]&lt;/strike&gt;</code></td>
+                <td>Strike a character string</td>
+              </tr>
+              <tr>
+                <td><code>&lt;code&gt;[...]&lt;/code&gt;</code></td>
+                <td>Display a character string with a coding style</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- End of the fifth tab contaning the text tags -->
+        <!-- Beginning of the sixth tab contaning miscellaneous tags -->
+        <article class="tabs-panel" id="misc">
+          <h2>Miscellaneous tags</h2>
+          <table class="hover">
+            <tbody>
+              <tr>
+                <td><code>!-- [...] --!</code></td>
+                <td>Insert a HTML comment</td>
+              </tr>
+              <tr>
+                <td><code>&lt;br&gt;</code></td>
+                <td>Line break</td>
+              </tr>
+              <tr>
+                <td><code>&lt;hr&gt;</code></td>
+                <td>Horizontal line</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- End of the sixth tab contaning miscellaneous tags -->
+      </div>
+      <!-- End of the tabs content -->
+    </div>
+    <!-- End of the tabs wrapper -->
+  </section>
+  <!-- End of the section containing the different tabs -->
+  <!-- Beginning of the Foundation 6 JavaScript scripts -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <!-- End of the Foundation 6 JavaScript scripts -->
+</body>
+<!-- End of the page body -->
+
 </html>

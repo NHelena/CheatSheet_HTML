@@ -17,3 +17,8 @@ html {
 .tabs-title a {
   font-size: 1rem;
 }
+
+/* Lower the font-size of the heading 2 */
+h2 {
+  font-size: 1.5rem;
+}
