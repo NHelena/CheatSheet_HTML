@@ -22,3 +22,22 @@ html {
 h2 {
   font-size: 1.5rem;
 }
+
+footer {
+  background-color: #0A0A0A;
+  color: #186496;
+  margin-top: 2rem;
+  overflow-x: hidden;
+}
+
+.float-left, .float-right {
+  margin-top: 1rem;
+}
+
+.float-left{
+  margin-left: 4rem;
+}
+
+.float-right {
+  margin-right: 4rem;
+}
