@@ -1,7 +1,27 @@
- /*Enlarge the page font size */
+/* ==========================================================================
+   Main page
+   ========================================================================== */
+
+/* Enlarge the page font size */
 html {
   font-size: 105%;
 }
+
+/* Required so that the footer stays fixed at the bottom of the page */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+/* ==========================================================================
+   Body content
+   ========================================================================== */
+
+/* =================================
+  Tabs properties */
 
 /* Space out the table container & the top of the page */
 .row {
@@ -23,21 +43,35 @@ h2 {
   font-size: 1.5rem;
 }
 
+
+/* =================================
+  Footer properties */
+
+/* Set a background & a font color to the footer  */
 footer {
   background-color: #0A0A0A;
   color: #186496;
   margin-top: 2rem;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin-top: auto;
 }
 
-.float-left, .float-right {
+/* Add space between the top of the footer & the top of the footer text */
+.left-footer, .right-footer {
   margin-top: 1rem;
 }
 
-.float-left{
+/* Add space on the left of the left footer text */
+.left-footer{
   margin-left: 4rem;
 }
 
-.float-right {
+/* Add space on the right of the right footer text */
+.right-footer {
   margin-right: 4rem;
 }
